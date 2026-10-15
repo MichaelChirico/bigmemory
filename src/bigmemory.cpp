@@ -824,7 +824,7 @@ SEXP ReadMatrix(SEXP fileName, BigMatrix *pMat,
             rowSizeReserved = true;
           }
           std::size_t pos;
-          while ( (pos = element.find('\"', 0)) != string::npos )
+          while ( (pos = element.find('"', 0)) != string::npos )
           {
             element = element.replace(pos, 1, "");
           }
